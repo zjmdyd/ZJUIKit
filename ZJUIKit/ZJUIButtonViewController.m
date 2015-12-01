@@ -32,6 +32,15 @@
     label.textAlignment = NSTextAlignmentCenter;
     label.backgroundColor = [UIColor whiteColor];
     [self.button addSubview:label];
+    
+    // 圆角没效果
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    btn.frame = CGRectMake(100, 100, 100, 50);
+    [btn setTitle:@"sender" forState:UIControlStateNormal];
+    [self.view addSubview:btn];
+    btn.layer.borderWidth = 1.0;
+    btn.layer.cornerRadius = 8;
+    btn.layer.masksToBounds = YES;
 }
 
 /*

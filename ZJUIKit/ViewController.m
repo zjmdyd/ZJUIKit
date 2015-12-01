@@ -145,55 +145,7 @@ static NSString *CELLID = @"cell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-//    NSInteger row = indexPath.row;
-    
-    
     UIViewController *vc = _vcs[indexPath.section][indexPath.row];
-//    if (indexPath.section == 0) {
-//        if (row == 0) {
-//            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"UIView"];
-//        }else if (row == 1) {
-//            vc = [[ZJUILabelViewController alloc] init];
-//        }else if (row == 2) {
-//            vc = [[ZJUIButtonViewController alloc] init];
-//        }else if (row == 3) {
-//            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"UIImageView"];
-//        }else if (row == 4) {
-//            vc = [[ZJUIScrollViewViewController alloc] init];
-//        }else if (row == 5) {
-//            vc = [[ZJUIFontViewController alloc] init];
-//        }else if (row == 6) {
-//            vc = [[ZJUIPickerviewViewController alloc] init];
-//        }else if (row == 7) {
-//            vc = [[ZJUIDatePickerviewViewController alloc] init];
-//        }else if (row == 8) {
-//            vc = [[ZJUISearchBarWithResultsController alloc] init];
-//        }else if (row == 9) {
-//            vc = [ZJUISearchBarWithResultsController new];
-//        }
-//    }else if (indexPath.section == 1) {
-//        if (row == 0) {
-//            vc = [[ZJGesturesViewController alloc] init];
-//        }
-//    }else if (indexPath.section == 2) {
-//        if (row == 0) {
-//            vc = [[ZJUIGravityBehaviorViewController alloc] init];
-//        }else if (row == 1) {
-//            vc = [[ZJUIAttachmentBehaviorViewController alloc] init];
-//        }
-//    }else if (indexPath.section == 3) {
-//        if (row == 0) {
-//            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"AutoLayout"];
-//        }
-//    }else if (indexPath.section == 4) {
-//        if (row == 0) {
-//            vc = [[ZJCircleScrollViewController alloc] init];
-//        }else if(row == 1) {
-//            vc = [[ZJUnfoldTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
-//        }else if(row == 2) {
-//            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"Palette"];
-//        }
-//    }
     
     if (vc) {
         vc.view.backgroundColor = [UIColor whiteColor];
@@ -203,7 +155,6 @@ static NSString *CELLID = @"cell";
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
