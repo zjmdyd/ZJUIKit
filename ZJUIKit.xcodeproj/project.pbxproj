@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		38622A761C3B532E00DACD31 /* ZJSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 38622A731C3B532E00DACD31 /* ZJSegmentedControl.m */; };
-		38622A771C3B532E00DACD31 /* ZJSegmentedControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38622A751C3B532E00DACD31 /* ZJSegmentedControlViewController.m */; };
+		38BB2FED1C3D14C20021E1A4 /* ZJUITintColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BB2FEC1C3D14C20021E1A4 /* ZJUITintColorViewController.m */; };
+		38BB2FF21C3D176D0021E1A4 /* ZJSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BB2FEF1C3D176D0021E1A4 /* ZJSegmentedControl.m */; };
+		38BB2FF31C3D176D0021E1A4 /* ZJSegmentedControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BB2FF11C3D176D0021E1A4 /* ZJSegmentedControlViewController.m */; };
 		66DB33741B9C225000597348 /* ZJUIImageViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DB33731B9C225000597348 /* ZJUIImageViewViewController.m */; };
 		66DB33771B9C226B00597348 /* ZJUIFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DB33761B9C226B00597348 /* ZJUIFontViewController.m */; };
 		66DB337A1B9C38F300597348 /* ZJUIPickerviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DB33791B9C38F300597348 /* ZJUIPickerviewViewController.m */; };
@@ -56,10 +57,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		38622A721C3B532E00DACD31 /* ZJSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSegmentedControl.h; sourceTree = "<group>"; };
-		38622A731C3B532E00DACD31 /* ZJSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSegmentedControl.m; sourceTree = "<group>"; };
-		38622A741C3B532E00DACD31 /* ZJSegmentedControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSegmentedControlViewController.h; sourceTree = "<group>"; };
-		38622A751C3B532E00DACD31 /* ZJSegmentedControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSegmentedControlViewController.m; sourceTree = "<group>"; };
+		38BB2FEB1C3D14C20021E1A4 /* ZJUITintColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJUITintColorViewController.h; sourceTree = "<group>"; };
+		38BB2FEC1C3D14C20021E1A4 /* ZJUITintColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJUITintColorViewController.m; sourceTree = "<group>"; };
+		38BB2FEE1C3D176D0021E1A4 /* ZJSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZJSegmentedControl.h; path = ZJUIKit/ZJSegmentedControl.h; sourceTree = SOURCE_ROOT; };
+		38BB2FEF1C3D176D0021E1A4 /* ZJSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZJSegmentedControl.m; path = ZJUIKit/ZJSegmentedControl.m; sourceTree = SOURCE_ROOT; };
+		38BB2FF01C3D176D0021E1A4 /* ZJSegmentedControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZJSegmentedControlViewController.h; path = ZJUIKit/ZJSegmentedControlViewController.h; sourceTree = SOURCE_ROOT; };
+		38BB2FF11C3D176D0021E1A4 /* ZJSegmentedControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZJSegmentedControlViewController.m; path = ZJUIKit/ZJSegmentedControlViewController.m; sourceTree = SOURCE_ROOT; };
 		66DB33721B9C225000597348 /* ZJUIImageViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJUIImageViewViewController.h; sourceTree = "<group>"; };
 		66DB33731B9C225000597348 /* ZJUIImageViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJUIImageViewViewController.m; sourceTree = "<group>"; };
 		66DB33751B9C226B00597348 /* ZJUIFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJUIFontViewController.h; sourceTree = "<group>"; };
@@ -145,6 +148,10 @@
 		38622A6F1C3B526E00DACD31 /* SegmentedControl */ = {
 			isa = PBXGroup;
 			children = (
+				38BB2FEE1C3D176D0021E1A4 /* ZJSegmentedControl.h */,
+				38BB2FEF1C3D176D0021E1A4 /* ZJSegmentedControl.m */,
+				38BB2FF01C3D176D0021E1A4 /* ZJSegmentedControlViewController.h */,
+				38BB2FF11C3D176D0021E1A4 /* ZJSegmentedControlViewController.m */,
 			);
 			name = SegmentedControl;
 			path = "../../untitled folder/ZJUIKit/ZJUIKit";
@@ -171,6 +178,8 @@
 				66DB337C1B9C390500597348 /* ZJUIDatePickerviewViewController.m */,
 				66F9A6B41BA80C53000B180C /* ZJNavigationViewController.h */,
 				66F9A6B51BA80C53000B180C /* ZJNavigationViewController.m */,
+				38BB2FEB1C3D14C20021E1A4 /* ZJUITintColorViewController.h */,
+				38BB2FEC1C3D14C20021E1A4 /* ZJUITintColorViewController.m */,
 				66EF4F181B4E221F000D99CB /* SearchBar */,
 			);
 			name = "视图篇";
@@ -323,10 +332,6 @@
 		66F339511B9D30B400C6BB1A /* Demo篇 */ = {
 			isa = PBXGroup;
 			children = (
-				38622A721C3B532E00DACD31 /* ZJSegmentedControl.h */,
-				38622A731C3B532E00DACD31 /* ZJSegmentedControl.m */,
-				38622A741C3B532E00DACD31 /* ZJSegmentedControlViewController.h */,
-				38622A751C3B532E00DACD31 /* ZJSegmentedControlViewController.m */,
 				38622A6F1C3B526E00DACD31 /* SegmentedControl */,
 				66F339551B9D358B00C6BB1A /* 循环滚动视图 */,
 				66F339561B9D359900C6BB1A /* 折叠TableView */,
@@ -472,7 +477,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38622A761C3B532E00DACD31 /* ZJSegmentedControl.m in Sources */,
+				38BB2FF21C3D176D0021E1A4 /* ZJSegmentedControl.m in Sources */,
+				38BB2FF31C3D176D0021E1A4 /* ZJSegmentedControlViewController.m in Sources */,
 				66EACEBE1B57B9E20082C1D2 /* ZJAutoLayoutViewController.m in Sources */,
 				66F3394C1B9D240D00C6BB1A /* ZJUIAttachmentBehaviorViewController.m in Sources */,
 				66F9A6B61BA80C53000B180C /* ZJNavigationViewController.m in Sources */,
@@ -485,7 +491,7 @@
 				66F339591B9D35A900C6BB1A /* ZJUnfoldTableViewController.m in Sources */,
 				66DB33741B9C225000597348 /* ZJUIImageViewViewController.m in Sources */,
 				66F24CF41B6F61B5005B4459 /* ZJGesturesViewController.m in Sources */,
-				38622A771C3B532E00DACD31 /* ZJSegmentedControlViewController.m in Sources */,
+				38BB2FED1C3D14C20021E1A4 /* ZJUITintColorViewController.m in Sources */,
 				66F339541B9D30BF00C6BB1A /* ZJCircleScrollViewController.m in Sources */,
 				66DB33A61B9C4E7A00597348 /* ZJUIGravityBehaviorViewController.m in Sources */,
 				66EBA9551B32D07E0063382E /* ViewController.m in Sources */,

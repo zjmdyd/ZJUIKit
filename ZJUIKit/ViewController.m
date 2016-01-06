@@ -74,7 +74,7 @@ static NSString *CELLID = @"cell";
 - (void)initAry {
     _sectionTitles = [NSArray arrayWithObjects:@"视图篇", @"手势篇", @"动画篇(UIDynamicAnimator)", @"自动布局篇", @"Demo篇", nil];
     
-    NSArray *s1 = @[@"UIView", @"UILabel", @"UIButton", @"UIImageView", @"UIScrollView", @"UIFont", @"UIPickerView", @"UIDatePicker", @"UISearchBar", @"Navigation"];
+    NSArray *s1 = @[@"UIView", @"UILabel", @"UIButton", @"UIImageView", @"UIScrollView", @"UIFont", @"UIPickerView", @"UIDatePicker", @"UISearchBar", @"Navigation", @"UITintColor"];
     NSArray *s2 = @[@"UIPanGesture"];
     NSArray *s3 = @[@"UIGravityBehavior", @"UIAttachmentBehavior"];
     NSArray *s4 = @[@"AutoLayout"];
@@ -91,7 +91,8 @@ static NSString *CELLID = @"cell";
                       [ZJUIPickerviewViewController new],
                       [ZJUIDatePickerviewViewController new],
                       [ZJUISearchBarWithResultsController new],
-                      [ZJNavigationViewController new]
+                      [ZJNavigationViewController new],
+                      [self.storyboard instantiateViewControllerWithIdentifier:@"tintColor"]
                       ];
     
     NSArray *s1VC = @[
