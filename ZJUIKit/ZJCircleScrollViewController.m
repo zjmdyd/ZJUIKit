@@ -72,9 +72,9 @@
     //加入pageController
     self.pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height-40, self.view.frame.size.width, 20)];
     self.pageControl.numberOfPages = self.titles.count;
-    self.pageControl.userInteractionEnabled = NO;                        //关闭用户交互功能,即用户不能点击pageControl实现切换
-    self.pageControl.currentPageIndicatorTintColor = [UIColor redColor]; //设置当前的pageControl的颜色
-    self.pageControl.pageIndicatorTintColor = [UIColor whiteColor];      //设置非当前的pageControl的颜色
+    self.pageControl.userInteractionEnabled = NO;                        // 关闭用户交互功能,即用户不能点击pageControl实现切换
+    self.pageControl.currentPageIndicatorTintColor = [UIColor redColor]; // 设置当前的pageControl的颜色
+    self.pageControl.pageIndicatorTintColor = [UIColor whiteColor];      // 设置非当前的pageControl的颜色
     [self.view addSubview:self.pageControl];
 }
 
