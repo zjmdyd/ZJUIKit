@@ -45,7 +45,7 @@
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-    return [NSString stringWithFormat:@"第%d行", row];
+    return [NSString stringWithFormat:@"第%zd行", row];
 }
 
 - (void)didReceiveMemoryWarning {

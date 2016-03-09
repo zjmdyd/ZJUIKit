@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3853359D1C7C09980033F77B /* ZJUIViewAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3853359C1C7C09980033F77B /* ZJUIViewAnimationViewController.m */; };
+		388775841C8FB91A00FF0F8E /* ZJUITableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388775821C8FB91A00FF0F8E /* ZJUITableViewViewController.m */; };
+		388775851C8FB91A00FF0F8E /* ZJUITableViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 388775831C8FB91A00FF0F8E /* ZJUITableViewViewController.xib */; };
+		388775881C8FBBCF00FF0F8E /* ZJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 388775871C8FBBCF00FF0F8E /* ZJCategory.m */; };
 		38BB2FED1C3D14C20021E1A4 /* ZJUITintColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BB2FEC1C3D14C20021E1A4 /* ZJUITintColorViewController.m */; };
 		38BB2FF21C3D176D0021E1A4 /* ZJSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BB2FEF1C3D176D0021E1A4 /* ZJSegmentedControl.m */; };
 		38BB2FF31C3D176D0021E1A4 /* ZJSegmentedControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BB2FF11C3D176D0021E1A4 /* ZJSegmentedControlViewController.m */; };
@@ -60,6 +64,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3853359B1C7C09980033F77B /* ZJUIViewAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJUIViewAnimationViewController.h; sourceTree = "<group>"; };
+		3853359C1C7C09980033F77B /* ZJUIViewAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJUIViewAnimationViewController.m; sourceTree = "<group>"; };
+		388775811C8FB91A00FF0F8E /* ZJUITableViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJUITableViewViewController.h; sourceTree = "<group>"; };
+		388775821C8FB91A00FF0F8E /* ZJUITableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJUITableViewViewController.m; sourceTree = "<group>"; };
+		388775831C8FB91A00FF0F8E /* ZJUITableViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJUITableViewViewController.xib; sourceTree = "<group>"; };
+		388775861C8FBBCF00FF0F8E /* ZJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJCategory.h; sourceTree = "<group>"; };
+		388775871C8FBBCF00FF0F8E /* ZJCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJCategory.m; sourceTree = "<group>"; };
 		38BB2FEB1C3D14C20021E1A4 /* ZJUITintColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJUITintColorViewController.h; sourceTree = "<group>"; };
 		38BB2FEC1C3D14C20021E1A4 /* ZJUITintColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJUITintColorViewController.m; sourceTree = "<group>"; };
 		38BB2FEE1C3D176D0021E1A4 /* ZJSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZJSegmentedControl.h; path = ZJUIKit/ZJSegmentedControl.h; sourceTree = SOURCE_ROOT; };
@@ -179,6 +190,9 @@
 				66DB33731B9C225000597348 /* ZJUIImageViewViewController.m */,
 				66F334DC1BA3CB5900A58E31 /* ZJUIScrollViewViewController.h */,
 				66F334DD1BA3CB5900A58E31 /* ZJUIScrollViewViewController.m */,
+				388775811C8FB91A00FF0F8E /* ZJUITableViewViewController.h */,
+				388775821C8FB91A00FF0F8E /* ZJUITableViewViewController.m */,
+				388775831C8FB91A00FF0F8E /* ZJUITableViewViewController.xib */,
 				66DB33751B9C226B00597348 /* ZJUIFontViewController.h */,
 				66DB33761B9C226B00597348 /* ZJUIFontViewController.m */,
 				66DB33781B9C38F300597348 /* ZJUIPickerviewViewController.h */,
@@ -201,6 +215,8 @@
 				66DB33A51B9C4E7A00597348 /* ZJUIGravityBehaviorViewController.m */,
 				66F3394A1B9D240D00C6BB1A /* ZJUIAttachmentBehaviorViewController.h */,
 				66F3394B1B9D240D00C6BB1A /* ZJUIAttachmentBehaviorViewController.m */,
+				3853359B1C7C09980033F77B /* ZJUIViewAnimationViewController.h */,
+				3853359C1C7C09980033F77B /* ZJUIViewAnimationViewController.m */,
 				66F339501B9D2AAA00C6BB1A /* 自定义组合Behavior */,
 			);
 			name = "动画篇(UIDynamicAnimator)";
@@ -243,6 +259,8 @@
 				66EBA94E1B32D07D0063382E /* AppDelegate.m */,
 				66EBA9531B32D07E0063382E /* ViewController.h */,
 				66EBA9541B32D07E0063382E /* ViewController.m */,
+				388775861C8FBBCF00FF0F8E /* ZJCategory.h */,
+				388775871C8FBBCF00FF0F8E /* ZJCategory.m */,
 				66DB33711B9C21CD00597348 /* 视图篇 */,
 				66F24CF11B6F6197005B4459 /* 手势篇 */,
 				66DB33A31B9C4CA200597348 /* 动画篇(UIDynamicAnimator) */,
@@ -431,7 +449,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = ZJ;
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = YunTu;
 				TargetAttributes = {
 					66EBA9451B32D07D0063382E = {
@@ -471,6 +489,7 @@
 				66EC12811B6B720C00745549 /* 1348715545189.jpg in Resources */,
 				66F3395D1B9D35B100C6BB1A /* buddy_header_arrow_down@2x.png in Resources */,
 				66EBA95D1B32D07E0063382E /* LaunchScreen.xib in Resources */,
+				388775851C8FB91A00FF0F8E /* ZJUITableViewViewController.xib in Resources */,
 				66F339641B9D3BC500C6BB1A /* playing_slider_thumb.png in Resources */,
 				66F339651B9D3BC500C6BB1A /* playing_slider_thumb@2x.png in Resources */,
 				66F3395C1B9D35B100C6BB1A /* buddy_header_arrow_right@2x.png in Resources */,
@@ -496,6 +515,7 @@
 				38BB2FF31C3D176D0021E1A4 /* ZJSegmentedControlViewController.m in Sources */,
 				66EACEBE1B57B9E20082C1D2 /* ZJAutoLayoutViewController.m in Sources */,
 				66F3394C1B9D240D00C6BB1A /* ZJUIAttachmentBehaviorViewController.m in Sources */,
+				3853359D1C7C09980033F77B /* ZJUIViewAnimationViewController.m in Sources */,
 				66F9A6B61BA80C53000B180C /* ZJNavigationViewController.m in Sources */,
 				66F24CE01B6EFC48005B4459 /* ZJUIViewViewController.m in Sources */,
 				66EF4F141B4E0E10000D99CB /* UIViewExt.m in Sources */,
@@ -519,7 +539,9 @@
 				66F3394F1B9D2A8800C6BB1A /* GravityWithCollisionBehavior.m in Sources */,
 				66F16F081B7C8B5100E540C1 /* ZJUIButtonViewController.m in Sources */,
 				66EBA9741B32D13A0063382E /* ZJUILabelViewController.m in Sources */,
+				388775841C8FB91A00FF0F8E /* ZJUITableViewViewController.m in Sources */,
 				66EF4F171B4E2219000D99CB /* ZJUISearchBarWithResultsController.m in Sources */,
+				388775881C8FBBCF00FF0F8E /* ZJCategory.m in Sources */,
 				66F339611B9D3BBB00C6BB1A /* ZJPaletteViewController.m in Sources */,
 				66EBA94C1B32D07D0063382E /* main.m in Sources */,
 			);
@@ -584,6 +606,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -653,6 +676,7 @@
 				INFOPLIST_FILE = ZJUIKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "YT.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -668,6 +692,7 @@
 				INFOPLIST_FILE = ZJUIKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "YT.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -687,6 +712,7 @@
 				);
 				INFOPLIST_FILE = ZJUIKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "YT.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZJUIKit.app/ZJUIKit";
 			};
@@ -702,6 +728,7 @@
 				);
 				INFOPLIST_FILE = ZJUIKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "YT.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZJUIKit.app/ZJUIKit";
 			};

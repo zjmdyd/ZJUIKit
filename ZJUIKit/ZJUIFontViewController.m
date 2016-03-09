@@ -24,7 +24,7 @@
     [super viewDidLoad];
     
     _fonts = [UIFont familyNames];
-    NSLog(@"count = %d", _fonts.count);
+    NSLog(@"count = %zd", _fonts.count);
     _kicksLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 74, 200, 100)];
     _kicksLabel.center = CGPointMake(self.view.width*0.5, _kicksLabel.center.y);
     _kicksLabel.text = @"赠送您10积分\n每天一次";
@@ -63,7 +63,7 @@
     }
     _kicksLabel.font = [UIFont fontWithName:_fonts[sender.tag] size:22];
 //    _nameLabel.text = [NSString stringWithFormat:@"fontName:%@\nindex = %d", _fonts[sender.tag], sender.tag];
-    NSLog(@"name = %@, tag = %d", _fonts[sender.tag], sender.tag);
+    NSLog(@"name = %@, tag = %zd", _fonts[sender.tag], sender.tag);
     sender.tag  += 1;
 }
 
@@ -87,7 +87,7 @@
 
 - (void)pickerView:(ZJPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     _kicksLabel.font = [UIFont fontWithName:_fonts[row] size:22];
-    _nameLabel.text = [NSString stringWithFormat:@"fontName:%@\nindex = %d", _fonts[row], row];
+    _nameLabel.text = [NSString stringWithFormat:@"fontName:%@\nindex = %zd", _fonts[row], row];
 }
 
 - (void)didReceiveMemoryWarning {

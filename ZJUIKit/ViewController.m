@@ -11,6 +11,7 @@
 #import "ZJUILabelViewController.h"
 #import "ZJUIButtonViewController.h"
 #import "ZJUIScrollViewViewController.h"
+#import "ZJUITableViewViewController.h"
 #import "ZJUIFontViewController.h"
 #import "ZJUIPickerviewViewController.h"
 #import "ZJUIDatePickerviewViewController.h"
@@ -22,6 +23,7 @@
 
 #import "ZJUIGravityBehaviorViewController.h"
 #import "ZJUIAttachmentBehaviorViewController.h"
+#import "ZJUIViewAnimationViewController.h"
 
 #import "ZJCircleScrollViewController.h"
 #import "ZJUnfoldTableViewController.h"
@@ -74,9 +76,9 @@ static NSString *CELLID = @"cell";
 - (void)initAry {
     _sectionTitles = [NSArray arrayWithObjects:@"视图篇", @"手势篇", @"动画篇(UIDynamicAnimator)", @"自动布局篇", @"Demo篇", nil];
     
-    NSArray *s1 = @[@"UIView", @"UILabel", @"UIButton", @"UIImageView", @"UIScrollView", @"UIFont", @"UIPickerView", @"UIDatePicker", @"UISearchBar", @"Navigation", @"UITintColor"];
+    NSArray *s1 = @[@"UIView", @"UILabel", @"UIButton", @"UIImageView", @"UIScrollView", @"UITableView", @"UIFont", @"UIPickerView", @"UIDatePicker", @"UISearchBar", @"Navigation", @"UITintColor"];
     NSArray *s2 = @[@"UIPanGesture"];
-    NSArray *s3 = @[@"UIGravityBehavior", @"UIAttachmentBehavior"];
+    NSArray *s3 = @[@"UIGravityBehavior", @"UIAttachmentBehavior", @"ZJUIViewAnimation"];
     NSArray *s4 = @[@"AutoLayout"];
     NSArray *s5 = @[@"CircleScrollView", @"UnfoldTableView", @"Palette(调色板)"];
     _titles = @[s1, s2, s3, s4, s5];
@@ -87,6 +89,7 @@ static NSString *CELLID = @"cell";
                       [ZJUIButtonViewController new],
                       [self.storyboard instantiateViewControllerWithIdentifier:@"UIImageView"],
                       [ZJUIScrollViewViewController new],
+                      [ZJUITableViewViewController new],
                       [ZJUIFontViewController new],
                       [ZJUIPickerviewViewController new],
                       [ZJUIDatePickerviewViewController new],
@@ -101,7 +104,8 @@ static NSString *CELLID = @"cell";
     
     NSArray *s2VC = @[
                       [ZJUIGravityBehaviorViewController new],
-                      [ZJUIAttachmentBehaviorViewController new]
+                      [ZJUIAttachmentBehaviorViewController new],
+                      [self.storyboard instantiateViewControllerWithIdentifier:@"UIViewAnimation"]
                       ];
     
     NSArray *s3VC = @[

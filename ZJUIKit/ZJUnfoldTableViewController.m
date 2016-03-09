@@ -57,7 +57,7 @@ static NSString *CellIdentifier = @"cell";
     [headView setBackgroundColor:[UIColor whiteColor]];
     
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(5, 12, 15, 15)];
-    NSString *string = [NSString stringWithFormat:@"%d", section];
+    NSString *string = [NSString stringWithFormat:@"%zd", section];
     if ([self.detailSectionTag containsObject:string]) {
         imageView.image = [UIImage imageNamed:@"buddy_header_arrow_down@2x.png"];
     }else{
@@ -85,7 +85,7 @@ static NSString *CellIdentifier = @"cell";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSString *string = [NSString stringWithFormat:@"%d", section];
+    NSString *string = [NSString stringWithFormat:@"%zd", section];
     if ([self.detailSectionTag containsObject:string]) {
         return 8;
     }
@@ -94,7 +94,7 @@ static NSString *CellIdentifier = @"cell";
 }
 
 - (void)open_closeDetailCell:(UIButton *)sender {
-    NSString *string = [NSString stringWithFormat:@"%d", sender.tag];
+    NSString *string = [NSString stringWithFormat:@"%zd", sender.tag];
     if ([self.detailSectionTag containsObject:string]) {
         [self.detailSectionTag removeObject:string];
     }else{
@@ -107,7 +107,7 @@ static NSString *CellIdentifier = @"cell";
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CellIdentifier];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"第%d行", indexPath.row+1];
+    cell.textLabel.text = [NSString stringWithFormat:@"第%zd行", indexPath.row+1];
     
     return cell;
 }

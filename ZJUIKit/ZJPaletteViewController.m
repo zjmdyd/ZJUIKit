@@ -175,7 +175,7 @@
     cs = [[NSCharacterSet characterSetWithCharactersInString:NUMBERS] invertedSet];//123h5890
     NSLog(@"cs = %@", cs);
     NSString *filtered = [[string componentsSeparatedByCharactersInSet:cs] componentsJoinedByString:@""];
-    NSLog(@"filtered = %@, %d", filtered, filtered.length);
+    NSLog(@"filtered = %@, %zd", filtered, filtered.length);
     BOOL basicTest = [string isEqualToString:filtered];
     if(!basicTest) {
         UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"提示"
