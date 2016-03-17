@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3853359D1C7C09980033F77B /* ZJUIViewAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3853359C1C7C09980033F77B /* ZJUIViewAnimationViewController.m */; };
+		385B85821C9AA5B800970191 /* ZJUITextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B85801C9AA5B800970191 /* ZJUITextFieldViewController.m */; };
+		385B85831C9AA5B800970191 /* ZJUITextFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 385B85811C9AA5B800970191 /* ZJUITextFieldViewController.xib */; };
 		388775841C8FB91A00FF0F8E /* ZJUITableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 388775821C8FB91A00FF0F8E /* ZJUITableViewViewController.m */; };
 		388775851C8FB91A00FF0F8E /* ZJUITableViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 388775831C8FB91A00FF0F8E /* ZJUITableViewViewController.xib */; };
 		388775881C8FBBCF00FF0F8E /* ZJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 388775871C8FBBCF00FF0F8E /* ZJCategory.m */; };
@@ -66,6 +68,9 @@
 /* Begin PBXFileReference section */
 		3853359B1C7C09980033F77B /* ZJUIViewAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJUIViewAnimationViewController.h; sourceTree = "<group>"; };
 		3853359C1C7C09980033F77B /* ZJUIViewAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJUIViewAnimationViewController.m; sourceTree = "<group>"; };
+		385B857F1C9AA5B800970191 /* ZJUITextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJUITextFieldViewController.h; sourceTree = "<group>"; };
+		385B85801C9AA5B800970191 /* ZJUITextFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJUITextFieldViewController.m; sourceTree = "<group>"; };
+		385B85811C9AA5B800970191 /* ZJUITextFieldViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJUITextFieldViewController.xib; sourceTree = "<group>"; };
 		388775811C8FB91A00FF0F8E /* ZJUITableViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJUITableViewViewController.h; sourceTree = "<group>"; };
 		388775821C8FB91A00FF0F8E /* ZJUITableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJUITableViewViewController.m; sourceTree = "<group>"; };
 		388775831C8FB91A00FF0F8E /* ZJUITableViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJUITableViewViewController.xib; sourceTree = "<group>"; };
@@ -186,6 +191,9 @@
 				66EBA9731B32D13A0063382E /* ZJUILabelViewController.m */,
 				66F16F061B7C8B5100E540C1 /* ZJUIButtonViewController.h */,
 				66F16F071B7C8B5100E540C1 /* ZJUIButtonViewController.m */,
+				385B857F1C9AA5B800970191 /* ZJUITextFieldViewController.h */,
+				385B85801C9AA5B800970191 /* ZJUITextFieldViewController.m */,
+				385B85811C9AA5B800970191 /* ZJUITextFieldViewController.xib */,
 				66DB33721B9C225000597348 /* ZJUIImageViewViewController.h */,
 				66DB33731B9C225000597348 /* ZJUIImageViewViewController.m */,
 				66F334DC1BA3CB5900A58E31 /* ZJUIScrollViewViewController.h */,
@@ -485,6 +493,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				385B85831C9AA5B800970191 /* ZJUITextFieldViewController.xib in Resources */,
 				66EBA9581B32D07E0063382E /* Main.storyboard in Resources */,
 				66EC12811B6B720C00745549 /* 1348715545189.jpg in Resources */,
 				66F3395D1B9D35B100C6BB1A /* buddy_header_arrow_down@2x.png in Resources */,
@@ -515,6 +524,7 @@
 				38BB2FF31C3D176D0021E1A4 /* ZJSegmentedControlViewController.m in Sources */,
 				66EACEBE1B57B9E20082C1D2 /* ZJAutoLayoutViewController.m in Sources */,
 				66F3394C1B9D240D00C6BB1A /* ZJUIAttachmentBehaviorViewController.m in Sources */,
+				385B85821C9AA5B800970191 /* ZJUITextFieldViewController.m in Sources */,
 				3853359D1C7C09980033F77B /* ZJUIViewAnimationViewController.m in Sources */,
 				66F9A6B61BA80C53000B180C /* ZJNavigationViewController.m in Sources */,
 				66F24CE01B6EFC48005B4459 /* ZJUIViewViewController.m in Sources */,

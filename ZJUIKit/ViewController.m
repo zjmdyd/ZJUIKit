@@ -10,6 +10,7 @@
 
 #import "ZJUILabelViewController.h"
 #import "ZJUIButtonViewController.h"
+#import "ZJUITextFieldViewController.h"
 #import "ZJUIScrollViewViewController.h"
 #import "ZJUITableViewViewController.h"
 #import "ZJUIFontViewController.h"
@@ -30,7 +31,7 @@
 #import "ZJPaletteViewController.h"
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate> {
-    NSArray *_sectionTitles, *_titles, *_vcs;
+    NSArray *_sectionTitles, *_titles;//, *_vcs;
 }
 
 @end
@@ -76,48 +77,12 @@ static NSString *CELLID = @"cell";
 - (void)initAry {
     _sectionTitles = [NSArray arrayWithObjects:@"视图篇", @"手势篇", @"动画篇(UIDynamicAnimator)", @"自动布局篇", @"Demo篇", nil];
     
-    NSArray *s1 = @[@"UIView", @"UILabel", @"UIButton", @"UIImageView", @"UIScrollView", @"UITableView", @"UIFont", @"UIPickerView", @"UIDatePicker", @"UISearchBar", @"Navigation", @"UITintColor"];
+    NSArray *s1 = @[@"UIView", @"UILabel", @"UIButton", @"ZJUITextField", @"UIImageView", @"UIScrollView", @"UITableView", @"UIFont", @"UIPickerView", @"UIDatePicker", @"UISearchBar", @"Navigation", @"UITintColor"];
     NSArray *s2 = @[@"UIPanGesture"];
     NSArray *s3 = @[@"UIGravityBehavior", @"UIAttachmentBehavior", @"ZJUIViewAnimation"];
     NSArray *s4 = @[@"AutoLayout"];
     NSArray *s5 = @[@"CircleScrollView", @"UnfoldTableView", @"Palette(调色板)"];
     _titles = @[s1, s2, s3, s4, s5];
-    
-    NSArray *s0VC = @[
-                      [self.storyboard instantiateViewControllerWithIdentifier:@"UIView"],
-                      [ZJUILabelViewController new],
-                      [ZJUIButtonViewController new],
-                      [self.storyboard instantiateViewControllerWithIdentifier:@"UIImageView"],
-                      [ZJUIScrollViewViewController new],
-                      [ZJUITableViewViewController new],
-                      [ZJUIFontViewController new],
-                      [ZJUIPickerviewViewController new],
-                      [ZJUIDatePickerviewViewController new],
-                      [ZJUISearchBarWithResultsController new],
-                      [ZJNavigationViewController new],
-                      [self.storyboard instantiateViewControllerWithIdentifier:@"tintColor"]
-                      ];
-    
-    NSArray *s1VC = @[
-                      [ZJGesturesViewController new]
-                      ];
-    
-    NSArray *s2VC = @[
-                      [ZJUIGravityBehaviorViewController new],
-                      [ZJUIAttachmentBehaviorViewController new],
-                      [self.storyboard instantiateViewControllerWithIdentifier:@"UIViewAnimation"]
-                      ];
-    
-    NSArray *s3VC = @[
-                      [self.storyboard instantiateViewControllerWithIdentifier:@"AutoLayout"]
-                      ];
-    
-    NSArray *s4VC = @[
-                      [ZJCircleScrollViewController new],
-                      [[ZJUnfoldTableViewController alloc] initWithStyle:UITableViewStyleGrouped],
-                      [self.storyboard instantiateViewControllerWithIdentifier:@"Palette"]
-                      ];
-    _vcs = @[s0VC, s1VC, s2VC, s3VC, s4VC];
 }
 
 #pragma mark - UITableViewDataSource
@@ -150,12 +115,54 @@ static NSString *CELLID = @"cell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    UIViewController *vc = _vcs[indexPath.section][indexPath.row];
+    UIViewController *vc = [self nextViewControllerWithIndexPath:indexPath];
     
     if (vc) {
         vc.view.backgroundColor = [UIColor whiteColor];
         [self.navigationController pushViewController:vc animated:YES];
     }
+}
+
+- (UIViewController *)nextViewControllerWithIndexPath:(NSIndexPath *)indexPath {
+    NSArray *vcs;
+    NSArray *s0VC = @[
+                      [self.storyboard instantiateViewControllerWithIdentifier:@"UIView"],
+                      [ZJUILabelViewController new],
+                      [ZJUIButtonViewController new],
+                      [ZJUITextFieldViewController new],
+                      [self.storyboard instantiateViewControllerWithIdentifier:@"UIImageView"],
+                      [ZJUIScrollViewViewController new],
+                      [ZJUITableViewViewController new],
+                      [ZJUIFontViewController new],
+                      [ZJUIPickerviewViewController new],
+                      [ZJUIDatePickerviewViewController new],
+                      [ZJUISearchBarWithResultsController new],
+                      [ZJNavigationViewController new],
+                      [self.storyboard instantiateViewControllerWithIdentifier:@"tintColor"]
+                      ];
+    
+    NSArray *s1VC = @[
+                      [ZJGesturesViewController new]
+                      ];
+    
+    NSArray *s2VC = @[
+                      [ZJUIGravityBehaviorViewController new],
+                      [ZJUIAttachmentBehaviorViewController new],
+                      [self.storyboard instantiateViewControllerWithIdentifier:@"UIViewAnimation"]
+                      ];
+    
+    NSArray *s3VC = @[
+                      [self.storyboard instantiateViewControllerWithIdentifier:@"AutoLayout"]
+                      ];
+    
+    NSArray *s4VC = @[
+                      [ZJCircleScrollViewController new],
+                      [[ZJUnfoldTableViewController alloc] initWithStyle:UITableViewStyleGrouped],
+                      [self.storyboard instantiateViewControllerWithIdentifier:@"Palette"]
+                      ];
+    vcs = @[s0VC, s1VC, s2VC, s3VC, s4VC];
+    
+    return vcs[indexPath.section][indexPath.row];
 }
 
 - (void)didReceiveMemoryWarning {
