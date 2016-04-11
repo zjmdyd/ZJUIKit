@@ -14,6 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UITextField *textField2;
+@property (weak, nonatomic) IBOutlet UIImageView *imgIV;
 
 @end
 
@@ -23,6 +24,7 @@
     [super viewDidLoad];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidChange:) name:UITextFieldTextDidChangeNotification object:nil];
+    self.imgIV.image = self.navigationController.navigationBar.backIndicatorTransitionMaskImage;    // 拿不到
 }
 
 /// 自定义键盘可实现文本框的支付密码输入方式, 思想是寻找一个媒介传播text, 下面的原理类似

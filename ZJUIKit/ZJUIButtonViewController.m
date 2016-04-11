@@ -25,13 +25,15 @@
     [self.button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     self.button.center = self.view.center;
     self.button.backgroundColor = [UIColor redColor];
+    self.button.titleLabel.numberOfLines = 0;
     [self.view addSubview:self.button];
+    [self.button setTitle:@"1\n2" forState:UIControlStateNormal];
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, self.button.width - 20, self.button.height - 20)];
     label.text = @"label";
     label.textAlignment = NSTextAlignmentCenter;
     label.backgroundColor = [UIColor whiteColor];
-    [self.button addSubview:label];
+//    [self.button addSubview:label];
     
     // 圆角没效果
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -44,7 +46,7 @@
 }
 
 /*
-    测试视图遮挡能否屏蔽Btn的Action
+    测试button子视图遮挡能否屏蔽Btn的Action
     结果:不能屏蔽button的touch事件
  */
 - (void)buttonAction:(UIButton *)sender {
