@@ -27,7 +27,7 @@
     self.button.backgroundColor = [UIColor redColor];
     self.button.titleLabel.numberOfLines = 0;
     [self.view addSubview:self.button];
-    [self.button setTitle:@"1\n2" forState:UIControlStateNormal];
+    [self.button setTitle:@"1\n2" forState:UIControlStateNormal];   // button的label换行
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, self.button.width - 20, self.button.height - 20)];
     label.text = @"label";
