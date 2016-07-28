@@ -21,11 +21,12 @@
     
     self.title = @"UILabel";
 
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 50)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
     label.center = self.view.center;
     label.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:label];
     
+#ifdef AAA
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(label.left, label.bottom + 10, label.width, label.height)];
     [btn setTitle:@"edit" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(editEnable:) forControlEvents:UIControlEventTouchUpInside];
@@ -33,6 +34,8 @@
     [self.view addSubview:btn];
     
     NSLog(@"%s", __func__);
+#endif
+    
 }
 
 /**
