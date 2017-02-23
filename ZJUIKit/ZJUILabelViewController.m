@@ -20,7 +20,7 @@
     [super viewDidLoad];
     
     self.title = @"UILabel";
-
+    
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
     label.center = self.view.center;
     label.backgroundColor = [UIColor orangeColor];
